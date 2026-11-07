@@ -1,0 +1,22 @@
+================================================================================
+   PANDUAN MENJALANKAN APLIKASI KARTU SANTRI & MAHROM DI KOMPUTER LAIN
+================================================================================
+
+1. SYARAT DI KOMPUTER/LAPTOP:
+   - Sistem Operasi: Windows 10 atau Windows 11.
+   - Sudah terpasang Node.js (bila belum, cukup unduh gratis di https://nodejs.org).
+
+2. CARA PASANG ICON SHORTCUT DI DESKTOP:
+   - Buka folder aplikasi ini.
+   - Klik 2x pada file: PASANG_SHORTCUT_DESKTOP.bat
+   - Otomatis ikon resmi "Aplikasi Kartu Santri" akan muncul di Desktop Windows.
+
+3. CARA MENJALANKAN APLIKASI:
+   - Cara 1 (Praktis): Klik 2x ikon "Aplikasi Kartu Santri" di Desktop.
+   - Cara 2: Klik 2x file JALANKAN_APLIKASI.bat di dalam folder ini.
+   - Browser akan otomatis terbuka ke alamat: http://localhost:5000
+
+4. CATATAN PENTING:
+   - Biarkan jendela hitam (Command Prompt) tetap terbuka saat menggunakan aplikasi.
+   - Jika sudah selesai menggunakan aplikasi, cukup tutup jendela hitam tersebut.
+================================================================================

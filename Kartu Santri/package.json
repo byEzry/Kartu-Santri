@@ -1,0 +1,33 @@
+{
+  "name": "generator-kartu-santri-mahrom",
+  "version": "1.0.0",
+  "description": "Generator Kartu Santri & Kartu Mahrom - Sistem Informasi Master Data Pesantren",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "build:client": "cd client && npm.cmd run build",
+    "client": "cd client && npm.cmd run dev",
+    "build": "cd client && npm.cmd run build"
+  },
+  "keywords": [
+    "santri",
+    "kartu-santri",
+    "kartu-mahrom",
+    "pesantren",
+    "id-card-generator"
+  ],
+  "author": "Antigravity Senior Full-Stack Developer",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "archiver": "^7.0.1",
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "sharp": "^0.35.5",
+    "xlsx": "^0.18.5"
+  }
+}

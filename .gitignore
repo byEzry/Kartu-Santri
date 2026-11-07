@@ -1,0 +1,63 @@
+# ==============================================================================
+# .gitignore - Root Workspace (Generator Kartu Santri & Mahrom)
+# ==============================================================================
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.*.local
+*.env
+!.env.example
+!**/.env.example
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+**/*.db
+**/*.db-shm
+**/*.db-wal
+!**/.gitkeep
+
+# Uploads photos & temp
+**/server/uploads/photos/*
+!**/server/uploads/photos/.gitkeep
+**/server/uploads/temp/*
+!**/server/uploads/temp/.gitkeep
+
+# Backups & Data exports
+*.zip
+*.tar.gz
+*.rar
+Backup_*.zip
+backup_*.zip
+*.xlsx
+*.xls
+*.csv
+!**/client/public/*.xlsx
+!**/client/public/*.xls
+
+# Build outputs
+**/dist/
+**/dist-ssr/
+**/.vite/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / Editors
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/

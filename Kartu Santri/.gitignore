@@ -1,0 +1,107 @@
+# ==============================================================================
+# .gitignore - Generator Kartu Santri & Mahrom (SIM Pesantren)
+# Melindungi kredensial rahasia, data privasi santri, database SQLite, dan file build
+# ==============================================================================
+
+# 1. Environment & Rahasia Kredensial (SANGAT KRUSIAL)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+*.key
+*.pem
+*.cert
+*.crt
+
+# Kecualikan template contoh env agar tetap tersimpan di repository
+!.env.example
+!client/.env.example
+
+# 2. Database SQLite & File Terkait (Data Sensitif Santri, Master Data, Log Akun)
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+server/data/*.db
+server/data/*.db-shm
+server/data/*.db-wal
+server/data/*.sqlite
+server/data/*.sqlite3
+!server/data/.gitkeep
+
+# 3. File Upload Pengguna & Backup Data (Privasi Foto Santri & Temp Ekstraksi)
+server/uploads/photos/*
+!server/uploads/photos/.gitkeep
+server/uploads/temp/*
+!server/uploads/temp/.gitkeep
+
+# File Backup Zip Sistem
+Backup_*.zip
+backup_*.zip
+*.zip
+*.tar.gz
+*.rar
+
+# File Excel / Spreadsheet yang diimpor/diekspor (Berisi NIK, No KK, No Telp)
+*.xlsx
+*.xls
+*.csv
+!client/public/*.xlsx
+!client/public/*.xls
+
+# 4. Dependency Direktori (Node.js)
+node_modules/
+*/node_modules/
+client/node_modules/
+server/node_modules/
+.pnp
+.pnp.js
+
+# 5. Build Output (Frontend Vite / React)
+dist/
+dist-ssr/
+client/dist/
+build/
+.vite/
+*.local
+
+# 6. Logs & Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 7. Sistem Operasi & File Cache Sampah
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# 8. Editor & IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+*.tmp
